@@ -158,7 +158,7 @@
       <configuration>
        <suiteXmlFiles>
        
-         <suiteXmlFile>srs/test/resources/runner/testng.xml</suiteXmlFile>
+         <suiteXmlFile>src/test/resources/runner/testng.xml</suiteXmlFile>
        
        </suiteXmlFiles>
       </configuration>
