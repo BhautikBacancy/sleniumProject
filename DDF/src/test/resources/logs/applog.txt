@@ -1,8 +1,15 @@
-INFO    2022-09-15 18:31:55,136 [main] base.BaseTest  - Config file loaded !!!
-INFO    2022-09-15 18:31:55,137 [main] base.BaseTest  - OR file loaded !!!
-INFO    2022-09-15 18:31:56,084 [main] base.BaseTest  - Chrome Launched
-INFO    2022-09-15 18:31:56,596 [main] base.BaseTest  - Navigated to : http://www.way2automation.com/angularjs-protractor/banking/#/login
-INFO    2022-09-15 18:31:56,865 [main] base.BaseTest  - DB Connection established !!!
-INFO    2022-09-15 18:32:07,024 [main] base.BaseTest  - Clicking on an Element : bmlBtn_CSS
-INFO    2022-09-15 18:32:07,151 [main] base.BaseTest  - Finding the Element : addCustBtn_CSS
-INFO    2022-09-15 18:32:07,190 [main] base.BaseTest  - Clicking on an Element : openAccount_CSS
+INFO    2022-09-19 16:05:08,429 [main] base.BaseTest  - Config file loaded !!!
+INFO    2022-09-19 16:05:08,429 [main] base.BaseTest  - OR file loaded !!!
+INFO    2022-09-19 16:05:09,737 [main] base.BaseTest  - Chrome Launched
+INFO    2022-09-19 16:05:10,301 [main] base.BaseTest  - Navigated to : http://www.way2automation.com/angularjs-protractor/banking/#/login
+INFO    2022-09-19 16:05:10,590 [main] base.BaseTest  - DB Connection established !!!
+INFO    2022-09-19 16:05:10,689 [main] base.BaseTest  - Clicking on an Element : bmlBtn_CSS
+INFO    2022-09-19 16:05:10,775 [main] base.BaseTest  - Finding the Element : addCustBtn_CSS
+INFO    2022-09-19 16:05:10,867 [main] base.BaseTest  - Clicking on an Element : addCustBtn_CSS
+INFO    2022-09-19 16:05:13,943 [main] base.BaseTest  - Typing in an Element : firstName_CSS entered the value as : Raman
+INFO    2022-09-19 16:05:17,016 [main] base.BaseTest  - Typing in an Element : lastName_CSS entered the value as : Arora
+INFO    2022-09-19 16:05:20,121 [main] base.BaseTest  - Typing in an Element : postCode_CSS entered the value as : A234234
+INFO    2022-09-19 16:05:23,201 [main] base.BaseTest  - Clicking on an Element : addCustomer_CSS
+INFO    2022-09-19 16:05:23,284 [main] base.BaseTest  - Clicking on an Element : openAccount_CSS
+INFO    2022-09-19 16:05:23,518 [main] base.BaseTest  - Typing in an Element : customer_CSS entered the value as : Raman Arora
+INFO    2022-09-19 16:05:23,629 [main] base.BaseTest  - Typing in an Element : currency_CSS entered the value as : Rupee
