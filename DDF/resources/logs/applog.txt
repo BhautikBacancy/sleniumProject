@@ -1,0 +1,6 @@
+INFO    2022-08-05 23:43:38,370 [main] base.BaseTest  - Config file loaded !!!
+INFO    2022-08-05 23:43:38,371 [main] base.BaseTest  - OR file loaded !!!
+INFO    2022-08-05 23:43:40,382 [main] base.BaseTest  - Firefox Launched
+INFO    2022-08-05 23:43:41,864 [main] base.BaseTest  - Navigated to : http://www.way2automation.com/angularjs-protractor/banking/#/login
+INFO    2022-08-05 23:43:42,013 [main] base.BaseTest  - DB Connection established !!!
+INFO    2022-08-05 23:43:52,702 [main] base.BaseTest  - Test Execution Completed !!!

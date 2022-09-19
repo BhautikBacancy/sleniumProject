@@ -1,0 +1,8 @@
+INFO    2022-09-15 18:31:55,136 [main] base.BaseTest  - Config file loaded !!!
+INFO    2022-09-15 18:31:55,137 [main] base.BaseTest  - OR file loaded !!!
+INFO    2022-09-15 18:31:56,084 [main] base.BaseTest  - Chrome Launched
+INFO    2022-09-15 18:31:56,596 [main] base.BaseTest  - Navigated to : http://www.way2automation.com/angularjs-protractor/banking/#/login
+INFO    2022-09-15 18:31:56,865 [main] base.BaseTest  - DB Connection established !!!
+INFO    2022-09-15 18:32:07,024 [main] base.BaseTest  - Clicking on an Element : bmlBtn_CSS
+INFO    2022-09-15 18:32:07,151 [main] base.BaseTest  - Finding the Element : addCustBtn_CSS
+INFO    2022-09-15 18:32:07,190 [main] base.BaseTest  - Clicking on an Element : openAccount_CSS
