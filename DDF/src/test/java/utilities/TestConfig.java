@@ -6,7 +6,7 @@ public class TestConfig{
 	public static String server="smtp.gmail.com";
 	public static String from = "bhautik.radadiya@bacancy.com";
 	public static String password = "Bhautik@Radadiya@12345";
-	public static String[] to ={"bhautikradadiya6@gmail.com","khushbu.parmar@bacancy.com","pallavi.darji@bacancy.com","umang.shah@bacancy.com","qualityesparto@gmail.com"};
+	public static String[] to ={"bhautikradadiya6@gmail.com"};
 	public static String subject = "Test Report";
 	
 	public static String messageBody ="TestMessage";

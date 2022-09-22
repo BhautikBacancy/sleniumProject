@@ -23,8 +23,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+
 import utilities.DbManager;
 import utilities.ExcelReader;
+import utilities.ExtentManager;
 import utilities.MonitoringMail;
 
 public class BaseTest {
@@ -56,6 +61,10 @@ public class BaseTest {
 	public static MonitoringMail mail = new MonitoringMail();
 	public static WebDriverWait wait;
 	public static WebElement dropdown;
+	public ExtentReports rep = ExtentManager.getInstance();
+	public static ExtentTest test;
+	
+	
 	
 	@BeforeSuite
 	public void setUp() {
@@ -156,7 +165,9 @@ public class BaseTest {
 		}
 
 		log.info("Clicking on an Element : " + locatorKey);
-		
+	    test.log(LogStatus.INFO, "Clicking on: "+locatorKey);	
+	
+	
 	}
 
 	public static void type(String locatorKey, String value) throws IOException, AddressException, MessagingException {
@@ -178,7 +189,7 @@ public class BaseTest {
 		}
 
 		log.info("Typing in an Element : " + locatorKey+" entered the value as : "+value);
-		
+		test.log(LogStatus.INFO, "Typeing in: "+locatorKey+"entered value as "+value);
 	}
 	
 	
@@ -208,7 +219,7 @@ public class BaseTest {
 		select.selectByVisibleText(value);
 
 		log.info("Typing in an Element : " + locatorKey+" entered the value as : "+value);
-		
+		test.log(LogStatus.INFO, "Selected element: "+locatorKey+"value is "+value);
 	}
 	
 	
@@ -238,10 +249,12 @@ public class BaseTest {
 			}
 			
 			log.info("Finding the Element : "+locatorKey);
+			test.log(LogStatus.INFO, "Finding the Element: "+locatorKey);
 			return true;
 		} catch (Throwable t) {
 
 			log.info("Error while finding an element : "+locatorKey+" exception message is : "+t.getMessage());
+			test.log(LogStatus.INFO, "Error while finding an element: "+locatorKey+" exception message is : "+t.getMessage());
 			return false;
 			
 		}
