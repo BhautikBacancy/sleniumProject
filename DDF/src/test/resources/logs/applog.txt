@@ -1,16 +1,15 @@
-INFO    2022-09-22 11:49:19,293 [main] base.BaseTest  - Config file loaded !!!
-INFO    2022-09-22 11:49:19,293 [main] base.BaseTest  - OR file loaded !!!
-INFO    2022-09-22 11:49:20,655 [main] base.BaseTest  - Chrome Launched
-INFO    2022-09-22 11:49:21,341 [main] base.BaseTest  - Navigated to : http://www.way2automation.com/angularjs-protractor/banking/#/login
-INFO    2022-09-22 11:49:21,612 [main] base.BaseTest  - DB Connection established !!!
-INFO    2022-09-22 11:49:21,701 [main] base.BaseTest  - Clicking on an Element : bmlBtn_CSS
-INFO    2022-09-22 11:49:31,721 [main] base.BaseTest  - Error while finding an element : addCustBtn_CSS exception message is : no such element: Unable to locate element: {"method":"css selector","selector":"button[ng-class='btnClass10']"}
-  (Session info: chrome=105.0.5195.127)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-Q0S3LGK', ip: '192.168.42.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Bacancy\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59595}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6d4e1ea1d13784c51d93e9949e469896
-*** Element info: {Using=css selector, value=button[ng-class='btnClass10']}
-INFO    2022-09-22 11:49:42,291 [main] base.BaseTest  - Clicking on an Element : openAccount_CSS
+INFO    2022-09-22 12:23:07,968 [main] base.BaseTest  - Config file loaded !!!
+INFO    2022-09-22 12:23:07,969 [main] base.BaseTest  - OR file loaded !!!
+INFO    2022-09-22 12:23:08,949 [main] base.BaseTest  - Chrome Launched
+INFO    2022-09-22 12:23:09,504 [main] base.BaseTest  - Navigated to : http://www.way2automation.com/angularjs-protractor/banking/#/login
+INFO    2022-09-22 12:23:09,818 [main] base.BaseTest  - DB Connection established !!!
+INFO    2022-09-22 12:23:09,911 [main] base.BaseTest  - Clicking on an Element : bmlBtn_CSS
+INFO    2022-09-22 12:23:10,002 [main] base.BaseTest  - Finding the Element : addCustBtn_CSS
+INFO    2022-09-22 12:23:10,235 [main] base.BaseTest  - Clicking on an Element : addCustBtn_CSS
+INFO    2022-09-22 12:23:13,323 [main] base.BaseTest  - Typing in an Element : firstName_CSS entered the value as : Raman
+INFO    2022-09-22 12:23:16,423 [main] base.BaseTest  - Typing in an Element : lastName_CSS entered the value as : Arora
+INFO    2022-09-22 12:23:19,519 [main] base.BaseTest  - Typing in an Element : postCode_CSS entered the value as : A234234
+INFO    2022-09-22 12:23:22,583 [main] base.BaseTest  - Clicking on an Element : addCustomer_CSS
+INFO    2022-09-22 12:23:22,717 [main] base.BaseTest  - Clicking on an Element : openAccount_CSS
+INFO    2022-09-22 12:23:23,010 [main] base.BaseTest  - Typing in an Element : customer_CSS entered the value as : Raman Arora
+INFO    2022-09-22 12:23:23,124 [main] base.BaseTest  - Typing in an Element : currency_CSS entered the value as : Rupee
