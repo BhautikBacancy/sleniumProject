@@ -1,15 +1,9 @@
-INFO    2022-09-26 12:36:37,958 [main] base.BaseTest  - Config file loaded !!!
-INFO    2022-09-26 12:36:37,959 [main] base.BaseTest  - OR file loaded !!!
-INFO    2022-09-26 12:36:38,917 [main] base.BaseTest  - Chrome Launched
-INFO    2022-09-26 12:36:39,481 [main] base.BaseTest  - Navigated to : http://www.way2automation.com/angularjs-protractor/banking/#/login
-INFO    2022-09-26 12:36:39,736 [main] base.BaseTest  - DB Connection established !!!
-INFO    2022-09-26 12:36:39,827 [main] base.BaseTest  - Clicking on an Element : bmlBtn_CSS
-INFO    2022-09-26 12:36:39,898 [main] base.BaseTest  - Finding the Element : addCustBtn_CSS
-INFO    2022-09-26 12:36:40,138 [main] base.BaseTest  - Clicking on an Element : addCustBtn_CSS
-INFO    2022-09-26 12:36:43,269 [main] base.BaseTest  - Typing in an Element : firstName_CSS entered the value as : Raman
-INFO    2022-09-26 12:36:46,344 [main] base.BaseTest  - Typing in an Element : lastName_CSS entered the value as : Arora
-INFO    2022-09-26 12:36:49,413 [main] base.BaseTest  - Typing in an Element : postCode_CSS entered the value as : A234234
-INFO    2022-09-26 12:36:52,478 [main] base.BaseTest  - Clicking on an Element : addCustomer_CSS
-INFO    2022-09-26 12:36:52,572 [main] base.BaseTest  - Clicking on an Element : openAccount_CSS
-INFO    2022-09-26 12:36:52,858 [main] base.BaseTest  - Typing in an Element : customer_CSS entered the value as : Raman Arora
-INFO    2022-09-26 12:36:52,953 [main] base.BaseTest  - Typing in an Element : currency_CSS entered the value as : Rupee
+INFO    2022-09-26 13:29:09,795 [main] base.BaseTest  - Config file loaded !!!
+INFO    2022-09-26 13:29:09,796 [main] base.BaseTest  - OR file loaded !!!
+INFO    2022-09-26 13:29:10,841 [main] base.BaseTest  - Chrome Launched
+INFO    2022-09-26 13:29:11,422 [main] base.BaseTest  - Navigated to : http://www.way2automation.com/angularjs-protractor/banking/#/login
+INFO    2022-09-26 13:29:11,703 [main] base.BaseTest  - DB Connection established !!!
+INFO    2022-09-26 13:29:11,787 [main] base.BaseTest  - Clicking on an Element : bmlBtn_CSS
+INFO    2022-09-26 13:29:11,924 [main] base.BaseTest  - Finding the Element : addCustBtn_CSS
+INFO    2022-09-26 13:29:12,157 [main] base.BaseTest  - Clicking on an Element : addCustBtn_CSS
+INFO    2022-09-26 13:29:15,244 [main] base.BaseTest  - Typing in an Element : firstName_CSS entered the value as : Raman
