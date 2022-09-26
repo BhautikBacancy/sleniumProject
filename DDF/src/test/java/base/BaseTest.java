@@ -118,14 +118,14 @@ public class BaseTest {
 			
 			Config.setProperty("browser", browser);
 			
-			if(System.getenv("browserType")!=null && !System.getenv("browserType").isEmpty()) {
+			/*if(System.getenv("browserType")!=null && !System.getenv("browserType").isEmpty()) {
 				browserType = System.getenv("browseType");
 			}else {
 				browserType = Config.getProperty("browserType");
 			}
 			
 			Config.setProperty("browserType", browserType);
-			
+			*/
 			
 			
 			
