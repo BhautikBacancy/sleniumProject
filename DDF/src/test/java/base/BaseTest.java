@@ -111,7 +111,7 @@ public class BaseTest {
 			if(System.getenv("browserType")!=null && !System.getenv("browserType").isEmpty()) {
 				browserType = System.getenv("browseType");
 			}else {
-				browserType = Config.getProperty("browser");
+				browserType = Config.getProperty("browserType");
 			}
 			
 			Config.setProperty("browserType", browserType);
