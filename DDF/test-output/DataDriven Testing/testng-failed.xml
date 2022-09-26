@@ -22,7 +22,7 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="addCustomer" invocation-numbers="0"/>
+          <include name="addCustomer"/>
         </methods>
       </class> <!-- testcases.AddCustomerTest -->
     </classes>
@@ -33,7 +33,7 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="openAccount" invocation-numbers="0"/>
+          <include name="openAccount"/>
         </methods>
       </class> <!-- testcases.OpenAccountTest -->
     </classes>

@@ -28,6 +28,7 @@ public class AddCustomerTest extends BaseTest {
 		Thread.sleep(3000);
 		type("postCode_CSS", postcode);
 		Thread.sleep(3000);
+		
 		click("addCustomer_CSS");
 		
 	//	Alert alert = driver.switchTo().alert();

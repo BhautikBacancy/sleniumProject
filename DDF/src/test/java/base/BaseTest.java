@@ -16,8 +16,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
@@ -63,8 +64,10 @@ public class BaseTest {
 	public static WebElement dropdown;
 	public ExtentReports rep = ExtentManager.getInstance();
 	public static ExtentTest test;
-	
-	
+	public static ChromeOptions options;
+	public static FirefoxOptions foptions;
+	public static String browser;
+	public static String browserType;
 	
 	@BeforeSuite
 	public void setUp() {
@@ -105,9 +108,54 @@ public class BaseTest {
 			}
 			
 			
+			if(System.getenv("browserType")!=null && !System.getenv("browserType").isEmpty()) {
+				browserType = System.getenv("browseType");
+			}else {
+				browserType = Config.getProperty("browser");
+			}
+			
+			Config.setProperty("browserType", browserType);
+			
+			if(System.getenv("browser")!=null && !System.getenv("browser").isEmpty()) {
+				browser = System.getenv("browser");
+			}else {
+				browser = Config.getProperty("browser");
+			}
+			
+			Config.setProperty("browser", browser);
+			
+			
+			
+			
+			
+			
+			
+			
+			if(Config.getProperty("browserType").equals("headless")) {
+			
 			if(Config.getProperty("browser").equals("firefox")) {
 				
 				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\executables\\geckodriver.exe");
+				 foptions = new FirefoxOptions();
+				 foptions.addArguments("headless");
+				driver = new FirefoxDriver(foptions);
+				log.info("Firefox Launched");
+				
+			}else if(Config.getProperty("browser").equals("chrome")) {
+				
+				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\executables\\chromedriver.exe");
+				options = new ChromeOptions();
+				options.addArguments("headless");
+				driver = new ChromeDriver(options);
+				log.info("Chrome Launched");
+				}
+			
+			
+		}else if(Config.getProperty("browserType").equals("withhead")) {
+			if(Config.getProperty("browser").equals("firefox")) {
+				
+				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\executables\\geckodriver.exe");
+				
 				driver = new FirefoxDriver();
 				log.info("Firefox Launched");
 				
@@ -117,6 +165,7 @@ public class BaseTest {
 				driver = new ChromeDriver();
 				log.info("Chrome Launched");
 				
+			}
 			}
 			
 			driver.get(Config.getProperty("testSiteURL"));
