@@ -68,6 +68,10 @@ public class BaseTest {
 	public static FirefoxOptions foptions;
 	public static String browser;
 	public static String browserType;
+	public static String testSiteURL;
+	public static String implicitWait;
+	public static String explicitWait;
+	
 	
 	@BeforeSuite
 	public void setUp() {
@@ -108,6 +112,8 @@ public class BaseTest {
 			}
 			
 			
+			
+			//Jenkins parameterizing for browserType
 			if(System.getenv("browserType")!=null && !System.getenv("browserType").isEmpty()) {
 				browserType = System.getenv("browserType");
 			
@@ -117,17 +123,43 @@ public class BaseTest {
 			
 			Config.setProperty("browserType", browserType);
 			
-			
+			//Jenkins parameterizing for browser
 			if(System.getenv("browser")!=null && !System.getenv("browser").isEmpty()) {
 				browser = System.getenv("browser");
 			}else {
 				browser = Config.getProperty("browser");
 			}
 			
-			Config.setProperty("browser", browser);
-		
-		    
+			Config.setProperty("testSiteURL", testSiteURL);
+				
+			//Jenkins parameterizing for testSiteURL
+			if(System.getenv("testSiteURL")!=null && !System.getenv("testSiteURL").isEmpty()) {
+				browser = System.getenv("testSiteURL");
+			}else {
+				browser = Config.getProperty("testSiteURL");
+			}
 			
+			Config.setProperty("testSiteURL", testSiteURL);
+			
+			
+			//Jenkins parameterizing for implicitWait
+			if(System.getenv("implicitWait")!=null && !System.getenv("implicitWait").isEmpty()) {
+				browser = System.getenv("implicitWait");
+			}else {
+				browser = Config.getProperty("implicitWait");
+			}
+			
+			Config.setProperty("implicitWait", implicitWait);
+			
+			//Jenkins parameterizing for explicitWait
+			if(System.getenv("explicitWait")!=null && !System.getenv("explicitWait").isEmpty()) {
+				browser = System.getenv("explicitWait");
+			}else {
+				browser = Config.getProperty("explicitWait");
+			}
+			
+			Config.setProperty("explicitWait", explicitWait);
+
 			
 			
 			
