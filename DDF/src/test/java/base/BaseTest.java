@@ -130,7 +130,7 @@ public class BaseTest {
 				browser = Config.getProperty("browser");
 			}
 			
-			Config.setProperty("testSiteURL", testSiteURL);
+			Config.setProperty("browser", browser);
 				
 			//Jenkins parameterizing for testSiteURL
 			if(System.getenv("testSiteURL")!=null && !System.getenv("testSiteURL").isEmpty()) {
