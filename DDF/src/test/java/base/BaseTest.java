@@ -109,7 +109,8 @@ public class BaseTest {
 			
 			
 			if(System.getenv("browserType")!=null && !System.getenv("browserType").isEmpty()) {
-				browserType = System.getenv("browseType");
+				browserType = System.getenv("browserType");
+			
 			}else {
 				browserType = Config.getProperty("browserType");
 			}
@@ -152,6 +153,8 @@ public class BaseTest {
 			
 			
 		}else if(Config.getProperty("browserType").equals("withhead")) {
+			
+			
 			if(Config.getProperty("browser").equals("firefox")) {
 				
 				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\executables\\geckodriver.exe");
